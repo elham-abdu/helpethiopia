@@ -3,7 +3,7 @@ export default function Mission() {
     <section className="relative max-w-6xl mx-auto px-4 sm:px-6 md:px-8 -mt-12 sm:-mt-16 z-10">
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
         {/* Mission Card */}
-        <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-7 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300 border-2 border-yellow-400">
+        <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-7 flex flex-col items-center text-center transform hover:scale-103 transition-transform duration-300 border-2 border-yellow-400">
           <div className="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-yellow-400 shadow-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +23,8 @@ export default function Mission() {
           </p>
         </div>
 
-        {/* Vision Card - Elevated */}
-        <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl shadow-2xl p-6 sm:p-7 flex flex-col items-center text-center transform sm:-translate-y-6 hover:sm:-translate-y-8 hover:scale-105 transition-all duration-300">
+        {/* Vision Card */}
+        <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl shadow-2xl p-6 sm:p-7 flex flex-col items-center text-center transform sm:-translate-y-6 hover:sm:-translate-y-8 hover:scale-103 transition-all duration-300">
           <div className="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-white shadow-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export default function Mission() {
         </div>
 
         {/* Values Card */}
-        <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-7 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300 border-2 border-yellow-400">
+        <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-7 flex flex-col items-center text-center transform hover:scale-103 transition-transform duration-300 border-2 border-yellow-400">
           <div className="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-yellow-400 shadow-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
