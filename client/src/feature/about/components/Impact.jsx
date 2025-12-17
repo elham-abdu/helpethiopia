@@ -33,7 +33,7 @@ const Impact = () => {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
             Our <span className="text-yellow-500">Impact</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-yellow-500 mx-auto rounded-full mb-4"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-yellow-500 mx-auto rounded-full mb-4"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg">
             Through dedication and community partnership, we create measurable change across Ethiopia
           </p>
@@ -45,7 +45,7 @@ const Impact = () => {
               key={index}
               className={`${
                 stat.color === "blue"
-                  ? "bg-gradient-to-br from-blue-600 to-blue-700"
+                  ? "bg-gradient-to-br from-blue-400 to-blue-500"
                   : "bg-gradient-to-br from-yellow-500 to-yellow-600"
               } rounded-xl p-8 text-center shadow-lg ring-2 ring-white`}
             >
@@ -56,7 +56,7 @@ const Impact = () => {
           ))}
         </div>
 
-        <div className="mt-14 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-10 shadow-lg ring-2 ring-blue-300">
+        <div className="mt-14 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-10 shadow-lg ring-2 ring-blue-300">
           <div className="flex items-start gap-6">
             <svg
               className="w-12 h-12 text-yellow-400 flex-shrink-0 mt-1"
