@@ -1,4 +1,3 @@
-import axios from "axios";
 import { SERVER_URL } from "../config/env.js";
 
 const api = axios.create({

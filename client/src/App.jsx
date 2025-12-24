@@ -7,7 +7,6 @@ import WhatWeDoPage from "./pages/WhatWeDoPage";
 import DonatePage from "./pages/DonatePage";
 import TeamPage from "./pages/TeamPage";
 import Chapa from "./feature/payment/components/Chapa";
-import Stripe from "./feature/payment/components/Stripe";
 import SuccessPage from "./pages/SuccessPage";
 
 const App = () => {
