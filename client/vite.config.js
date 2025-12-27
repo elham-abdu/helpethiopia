@@ -7,6 +7,9 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     host: true,
+<<<<<<< HEAD
     port: 3000,
+=======
+>>>>>>> teammate/main
   },
 });
