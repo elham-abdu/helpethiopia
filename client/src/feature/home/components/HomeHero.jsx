@@ -40,20 +40,18 @@ const EnhancedHero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
 
-          {/* HERO TEXT (HELP Ethiopia Blue) */}
+          {/* HERO TEXT */}
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-7xl font-bold text-blue mb-4 leading-tight">
               HELP <span className="text-blue">Ethiopia</span>
             </h1>
-<p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-  <span className="text-gold font-bold">Empowering</span> communities with{" "}
-  <span className="text-blue font-semibold">hope</span>,{" "}
-  <span className="text-gold font-semibold">care</span>, and{" "}
-  <span className="text-blue font-bold">action</span>, building a brighter{" "}
-  <span className="text-gold font-bold">Ethiopia</span>.
-</p>
-
-
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+              <span className="text-gold font-bold">Empowering</span> communities with{" "}
+              <span className="text-blue font-semibold">hope</span>,{" "}
+              <span className="text-gold font-semibold">care</span>, and{" "}
+              <span className="text-blue font-bold">action</span>, building a brighter{" "}
+              <span className="text-gold font-bold">Ethiopia</span>.
+            </p>
 
             {/* Image Switch Buttons */}
             <div className="flex justify-center gap-4 mt-6">
@@ -81,7 +79,7 @@ const EnhancedHero = () => {
             ].map(([value, label, color], i) => (
               <div
                 key={i}
-                className="bg-bg/90 backdrop-blur-[2px] rounded-xl p-4 text-center shadow-lg"
+                className="bg-bg/90 backdrop-blur-[0.5px] rounded-xl p-4 text-center shadow-lg"
               >
                 <div className={`text-3xl md:text-4xl font-bold ${color}`}>{value}</div>
                 <div className="text-darkgray font-medium">{label}</div>
@@ -121,8 +119,8 @@ const EnhancedHero = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-1/4 left-5 w-24 h-24 bg-gold/30 rounded-full blur-md animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-5 w-32 h-32 bg-blue/30 rounded-full blur-md animate-pulse delay-1000"></div>
+      <div className="absolute top-1/4 left-5 w-24 h-24 bg-gold/30 rounded-full blur-sm animate-pulse"></div>
+      <div className="absolute bottom-1/4 right-5 w-32 h-32 bg-blue/30 rounded-full blur-sm animate-pulse delay-1000"></div>
       <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-gold/40 rounded-full blur-sm animate-bounce"></div>
     </section>
   );

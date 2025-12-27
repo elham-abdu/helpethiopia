@@ -25,14 +25,13 @@ const services = [
 
 const ServiceCard = ({ icon, title, description }) => {
   return (
-    <div className="relative bg-white rounded-xl p-8 border border-blue/50 shadow-sm flex flex-col h-full">
+    <div className="group relative bg-white rounded-xl p-8 border border-lightgray/40 shadow-sm hover:shadow-md hover:border-blue/50 transition-all duration-300 flex flex-col h-full">
       
-      {/* always visible top accent */}
-      <span className="absolute top-0 left-0 w-full h-[2px] bg-blue rounded-t-xl" />
+      {/* subtle institutional top accent */}
+      <span className="absolute top-0 left-0 w-full h-[2px] bg-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-xl" />
 
       <div className="mb-6 flex items-center gap-4">
-        {/* icon background always subtle blue */}
-        <div className="p-3 rounded-lg bg-blue/5">
+        <div className="p-3 rounded-lg bg-gray-50 group-hover:bg-blue/5 transition-colors">
           {icon}
         </div>
         <h3 className="text-xl font-semibold text-darkblue">{title}</h3>
@@ -43,10 +42,10 @@ const ServiceCard = ({ icon, title, description }) => {
       </p>
 
       <div className="pt-6 border-t border-gray-100 mt-auto">
-        <button className="flex items-center gap-2 text-sm font-semibold text-blue group/btn">
+        <button className="flex items-center gap-2 text-sm font-semibold text-blue hover:text-darkblue transition-colors group/btn">
           <span>Learn More</span>
           <ArrowRight
-            className="w-4 h-4 transition-transform"
+            className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"
             weight="bold"
           />
         </button>
@@ -54,7 +53,6 @@ const ServiceCard = ({ icon, title, description }) => {
     </div>
   )
 }
-
 
 export default function Service() {
   return (
