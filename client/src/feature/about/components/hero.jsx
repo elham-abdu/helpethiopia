@@ -1,55 +1,44 @@
-import heroImage from "../../../assets/aboutUs_hero.jpg";
-
-
-export default function Hero() {
+// src/feature/whatwedo/components/SimpleHero.jsx
+const SimpleHero = () => {
   return (
-    <section className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] flex items-start justify-center overflow-hidden">
-      {/* Background Image */}
-      <img
-         src={heroImage}
-        alt="HELP Ethiopia Community Support"
-        className="absolute inset-0 w-full h-full object-cover"
-        loading="eager"
-        fetchPriority="high"
-      />
+    <section className="relative pt-12 pb-16 md:pt-16 md:pb-20 bg-gradient-to-br from-blue-50 via-white to-yellow-50 overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-8 left-8 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+      <div className="absolute top-8 right-8 w-64 h-64 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+      <div className="absolute -bottom-6 left-16 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-blue-800/50 to-yellow-700/40"></div>
-
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-3xl mt-6 sm:mt-8">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-2xl">
-          <span className="text-yellow-400">About </span>
-          <span className="text-blue-800 inline-block transition-transform duration-300 hover:scale-105">
-            HELP Ethiopia
-          </span>
-        </h1>
-
-        <p className="text-white/95 text-base sm:text-lg md:text-xl font-medium leading-relaxed drop-shadow-xl mb-3">
-          A non-profit organization committed to strengthening communities in Ethiopia through
-          healthcare, education, leadership, and sustainable development.
-        </p>
-
-        {/* CTA */}
-        <div className="flex justify-center">
-          <button
-            className="
-              px-8 py-3 
-              bg-blue-700
-              text-white
-              font-bold 
-              rounded-full 
-              shadow-xl
-              hover:bg-blue-600 hover:shadow-2xl hover:scale-105
-              active:bg-white active:text-blue-800
-              transition-all duration-300 
-              text-lg
-            "
-          >
-            Learn More
-          </button>
+      <div className="container relative mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center">
+            What <span className="text-blue-600">We Do</span>
+          </h1>
+          
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg">
+            <div className="space-y-5 text-base text-gray-700">
+              <p>
+                <strong className="text-blue-700 text-lg">HELP Ethiopia fights for better healthcare in Ethiopia.</strong> Our Ye'Eteye Health Charity directly aids patients struggling with medical bills at Tikur Anbessa Hospital.
+              </p>
+              
+              <p>
+                We go beyond finances, championing quality improvements in hospitals by streamlining procedures, improving patient transfers, and enhancing data management for better decision making. We also focus on optimizing hospital layouts for smoother patient flow and well-being.
+              </p>
+              
+              <p>
+                But HELP Ethiopia doesn't stop there. We invest in the future by building leadership skills in young Ethiopians, ensuring a new generation equipped to tackle healthcare challenges.
+              </p>
+            </div>
+            
+            {/* Pill tags at the bottom */}
+            <div className="mt-8 pt-6 border-t border-gray-100 flex flex-wrap justify-center gap-3">
+              <span className="bg-blue-100 text-blue-800 px-4 py-1.5 rounded-full font-medium text-sm">Charity Support</span>
+              <span className="bg-yellow-100 text-yellow-800 px-4 py-1.5 rounded-full font-medium text-sm">Quality Improvement</span>
+              <span className="bg-blue-100 text-blue-800 px-4 py-1.5 rounded-full font-medium text-sm">Education & Leadership</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
+
+export default SimpleHero;

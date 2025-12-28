@@ -17,7 +17,7 @@ const App = () => {
         <Route element={<UserLayout />}>
           <Route index element={<HomePage />} />
           <Route path="*" element={<NotFoundPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/about-us" element={<AboutPage />} />
           <Route path="/what-we-do" element={<WhatWeDoPage />} />
           <Route path="/our-team" element={<TeamPage />} />
           <Route path="/donate" element={<DonatePage />} />
