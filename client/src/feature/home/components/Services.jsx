@@ -27,7 +27,6 @@ const ServiceCard = ({ icon, title, description }) => {
   return (
     <div className="group relative bg-white rounded-xl p-8 border border-lightgray/40 shadow-sm hover:shadow-md hover:border-blue/50 transition-all duration-300 flex flex-col h-full">
       
-      {/* subtle institutional top accent */}
       <span className="absolute top-0 left-0 w-full h-[2px] bg-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-xl" />
 
       <div className="mb-6 flex items-center gap-4">

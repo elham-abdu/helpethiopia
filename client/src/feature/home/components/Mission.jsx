@@ -67,13 +67,11 @@ export default function Mission() {
 
   return (
     <section id="mission-section" className="relative py-20 px-4 sm:px-6 lg:px-8 font-text overflow-hidden">
-      {/* Background with subtle pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-[#233875]/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-72 h-72 bg-[#FFDE59]/20 rounded-full blur-3xl"></div>
         </div>
-        {/* Subtle grid pattern - FIXED ESCAPING */}
         <div 
           className="absolute inset-0 opacity-5"
           style={{
@@ -83,9 +81,7 @@ export default function Mission() {
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        {/* Hero Header */}
         <div className="text-center mb-16">
-          {/* Animated badge */}
           <div className={`inline-block mb-8 transition-all duration-1000 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
@@ -108,7 +104,6 @@ export default function Mission() {
             </div>
           </div>
 
-          {/* Main Title */}
           <h1 className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 transition-all duration-1000 delay-300 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
@@ -127,7 +122,6 @@ export default function Mission() {
             </span>
           </h1>
 
-          {/* Subtitle with animation */}
           <div className={`max-w-3xl mx-auto mb-12 transition-all duration-1000 delay-500 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
@@ -142,12 +136,10 @@ export default function Mission() {
           </div>
         </div>
 
-        {/* Description Card */}
         <div className={`relative max-w-4xl mx-auto mb-20 transition-all duration-1000 delay-700 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <div className="relative backdrop-blur-sm bg-white/80 rounded-2xl p-8 md:p-10 shadow-xl border border-gray-100 overflow-hidden">
-            {/* Decorative corner */}
             <div className="absolute top-0 right-0 w-24 h-24 overflow-hidden">
               <div className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-[#233875]/10 to-transparent transform rotate-45 translate-x-6 -translate-y-6"></div>
             </div>
@@ -163,11 +155,9 @@ export default function Mission() {
           </div>
         </div>
 
-        {/* Mission & Vision Grid */}
         <div className={`grid lg:grid-cols-2 gap-8 mb-20 transition-all duration-1000 delay-900 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-          {/* Mission Card */}
           <div className="group relative">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#233875] to-[#FFDE59] rounded-2xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
             <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-gray-100 h-full">
@@ -209,14 +199,12 @@ export default function Mission() {
                 </div>
               </div>
               
-              {/* Floating elements */}
               <div className="absolute bottom-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
                 <div className="text-6xl font-bold text-[#233875]">M</div>
               </div>
             </div>
           </div>
 
-          {/* Vision Card */}
           <div className="group relative">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#FFDE59] to-[#233875] rounded-2xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
             <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-gray-100 h-full">
@@ -245,7 +233,6 @@ export default function Mission() {
                 </p>
               </div>
               
-              {/* Vision highlight */}
               <div className="mt-8 p-4 bg-gradient-to-r from-[#FFDE59]/5 to-transparent rounded-xl border border-[#FFDE59]/20">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-[#FFDE59] animate-pulse"></div>
@@ -255,7 +242,6 @@ export default function Mission() {
                 </div>
               </div>
               
-              {/* Floating elements */}
               <div className="absolute bottom-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
                 <div className="text-6xl font-bold text-[#FFDE59]">V</div>
               </div>
@@ -263,7 +249,6 @@ export default function Mission() {
           </div>
         </div>
 
-        {/* Core Values */}
         <div className={`text-center mb-16 transition-all duration-1000 delay-1000 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
@@ -293,7 +278,6 @@ export default function Mission() {
           </div>
         </div>
 
-        {/* CTA Section */}
         <div className={`text-center transition-all duration-1000 delay-1100 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>

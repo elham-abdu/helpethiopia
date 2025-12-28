@@ -28,7 +28,7 @@ const EnhancedHero = () => {
       icon: <Heart className="w-4 h-4" />, 
       value: "1K+", 
       label: "Patients Helped", 
-      color: "text-[#ffffff]",
+      color: "text-white",
       bgColor: "bg-[#ffde59]/20",
       borderColor: "border-[#ffde59]/40"
     },
@@ -36,7 +36,7 @@ const EnhancedHero = () => {
       icon: <Star className="w-4 h-4" />, 
       value: "15+", 
       label: "Active Programs", 
-      color: "text-[#ffffff]",
+      color: "text-white",
       bgColor: "bg-[#233875]/30",
       borderColor: "border-[#233875]/50"
     },
@@ -44,7 +44,7 @@ const EnhancedHero = () => {
       icon: <GraduationCap className="w-4 h-4" />, 
       value: "490+", 
       label: "Workers Trained", 
-      color: "text-[#ffffff]",
+      color: "text-white",
       bgColor: "bg-[#ffde59]/20",
       borderColor: "border-[#ffde59]/40"
     },
@@ -52,13 +52,12 @@ const EnhancedHero = () => {
       icon: <Users className="w-4 h-4" />, 
       value: "245+", 
       label: "Volunteers", 
-      color: "text-[#ffffff]",
+      color: "text-white",
       bgColor: "bg-[#233875]/30",
       borderColor: "border-[#233875]/50"
     },
   ];
 
-  // Handle manual navigation
   const handleNext = () => {
     setCurrentImage((prev) => (prev + 1) % heroImages.length);
   };
@@ -73,10 +72,7 @@ const EnhancedHero = () => {
 
   return (
     <section className="relative pt-4 md:pt-5 pb-12 md:pb-14 font-text overflow-hidden">
-      
-      {/* Background with manual scrolling */}
       <div className="absolute inset-0">
-        {/* All images stacked with opacity transitions */}
         {heroImages.length > 0 ? heroImages.map((img, index) => (
           <div 
             key={index}
@@ -92,7 +88,6 @@ const EnhancedHero = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-[#233875]/95 via-[#233875]/70 to-[#233875]/40"></div>
           </div>
         )) : (
-          // Fallback if no images loaded
           <div className="absolute inset-0">
             <img
               src={fallbackHeroImages[currentImage]}
@@ -103,7 +98,6 @@ const EnhancedHero = () => {
           </div>
         )}
         
-        {/* Navigation Buttons */}
         <div className="absolute inset-0 flex items-center justify-between px-4 z-20">
           <button
             onClick={handlePrev}
@@ -122,7 +116,6 @@ const EnhancedHero = () => {
           </button>
         </div>
 
-        {/* Progress indicator dots */}
         <div className="absolute bottom-4 left-0 right-0 z-20 px-4">
           <div className="max-w-5xl mx-auto">
             <div className="flex justify-center gap-2">
@@ -150,8 +143,6 @@ const EnhancedHero = () => {
         <div className={`max-w-5xl mx-auto transform transition-all duration-1000 ${
           isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-
-          {/* Hero Content */}
           <div className="text-center mb-6">
             <div className="inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm px-2 py-1 rounded-full mb-3 border border-white/25">
               <div className="w-1 h-1 bg-[#ffde59] rounded-full animate-pulse"></div>
@@ -175,7 +166,6 @@ const EnhancedHero = () => {
             </div>
           </div>
 
-          {/* Stats Section */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-8">
             {stats.map((stat, index) => (
               <div
@@ -207,7 +197,6 @@ const EnhancedHero = () => {
             ))}
           </div>
 
-          {/* Photo Gallery */}
           <div className="relative">
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-1">
@@ -242,7 +231,6 @@ const EnhancedHero = () => {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>
